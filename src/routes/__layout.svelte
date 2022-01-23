@@ -1,4 +1,3 @@
-
 <script>
     import supabase from '$lib/db';
     import { page, session } from '$app/stores';
@@ -25,11 +24,9 @@
    	 }
 
    	 // logout redirect
-   	 if (!$session && $page.url.pathname === '/logout') {
+   	 if (!$session && $page.url.pathname === '/') {
    		 goto('/login');
    	 }
     }
 </script>
 <slot />
-
-
